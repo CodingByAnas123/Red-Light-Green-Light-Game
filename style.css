@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: background-color 0.5s ease;
+}
+
+/* Game Container */
+.game_container {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  background: linear-gradient(to bottom, #87cefa, #32cd32);
+  border: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+/* Traffic Light */
+#light {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 50px;
+  background: green;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.red {
+  background: red;
+}
+
+/* Player */
+#player {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: yellow;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+/* Controls */
+#controls {
+  text-align: center;
+}
+
+#move_btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Game over overlay */
+#game_over_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+  z-index: 1000;
+}
+
+#game_over_message {
+  text-align: center;
+  background: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#game_over_message h1 {
+  color: red;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#game_over_message p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#restart_btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #32cd32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#restart_btn:hover {
+  background: #228b22;
+}
+
+/* Victory Overlay */
+#victory_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+  z-index: 1000;
+}
+
+#victoty_message {
+  text-align: center;
+  background: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#victoty_message h1 {
+  color: green;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#victoty_message p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#play_again_btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #32cd32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#play_again_btn:hover {
+  background: #228b22;
+}

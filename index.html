@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Light Green Light</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="game_container">
+        <div id="light" class="green">Green Light</div>
+        <div id="player"></div>
+    </div>
+
+    <div id="controls">
+        <button id="move_btn">Move</button>
+        <div id="status">Press "Move" during Green Light!</div>
+    </div>
+
+    <!-- Game over pop up -->
+    <div id="game_over_overlay">
+        <div id="game_over_message">
+            <h1>Game Over</h1>
+            <p>You moved during Red Light!</p>
+            <button id="restart_btn">Restart</button>
+        </div>
+    </div>
+
+    <!-- Win Pop up -->
+     <div id="victory_overlay">
+        <div id="victoty_message">
+            <h1>You Win!</h1>
+            <p>Congratulations! You reached the goal</p>
+            <button id="play_again_btn">Play Again</button>
+        </div>
+     </div>
+
+     <!-- audio -->
+      <audio id="game_audio" src="audio/Squid game red light green light sound effect.mp3"></audio>
+
+      <!-- add js file -->
+       <script src="script.js"></script>
+
+</body>
+</html>
